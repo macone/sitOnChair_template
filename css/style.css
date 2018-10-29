@@ -1,7 +1,227 @@
 * {
     font-family: 'Raleway', Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+
 }
 
 .main-width {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+/*
+Header styles
+ */
+
+header{
+    background-image: linear-gradient(#FFF, #f7f7f7, #CCC);
+}
+
+.site-header {
+    background-color: #000;
+    width: 100%;
+    height: 40px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+.site-header > .main-width {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+strong {
+    color: #00C4A2;
+    font-weight: 900;
+}
+
+
+.menu ul{
+    display:flex;
+}
+
+.menu > ul > li{
+    margin-right: 45px;
+}
+.menu >ul >  li:last-child{
+    margin-right: 0;
+}
+
+.menu a {
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.dropdown-start {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    height: 84px;
+    width: 115px;
+    left: -13px;
+    top: 38px;
+    background-color: #000;
+    list-style: none;
+    flex-direction: column;
+    padding: 5px 0 0 0;
+    justify-content: space-evenly;
+}
+
+.dropdown-menu::before {
+    background-color: #000;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg);
+    position: absolute;
+    top:-6px;
+    right:60px;
+    width: 12px;
+    height: 12px;
+    content: "";
+}
+
+.dropdown-item a {
+    text-transform: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px;
+}
+
+.slider{
+    height: 480px;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
 
 }
+
+.slider > .main-width {
+
+    background-size: 40%;
+}
+
+.slider-cont{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-img {
+    padding-top: 100px;
+    background: url(../images/black_chair.png) no-repeat bottom;
+    background-size: 170%;
+    width: 310px;
+}
+.slider-txt{
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    height: 300px;
+}
+
+.slider-txt h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+.slider-txt span{
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.slider-txt > button {
+    border-radius: 10px;
+    border: 0;
+    width: 250px;
+    height: 50px;
+    background-color: #00C4A2;
+    align-self: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 22px;
+}
+
+.slider-arrow {
+    font-size: 80px;
+    align-self: center;
+    color: #00C4A2;
+    font-weight: 100;
+}
+
+
+/*
+article section Styles
+ */
+
+
+
+.article{
+    margin: 20px 0 50px 0;
+}
+
+.article > .main-width {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-item {
+    width: 315px;
+    border: 1px solid #BBB;
+    position: relative;
+}
+
+.article-item img {
+    position: absolute;
+    width: 100%;
+}
+
+.article-head {
+    height: 60px;
+    background-color: rgba(255,255,255,0.6);
+    position: absolute;
+    width: 100%;
+    bottom: -50px;
+    font-weight: 600;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+.article-head span {
+    width: 50px;
+}
+
+
+/*
+Price section styles
+ */
+
+.price {
+    background-color: #F1F1F1;
+}
+
+.price-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*
+Footer Style
+ */
