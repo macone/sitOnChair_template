@@ -59,8 +59,9 @@
       <div class="article-item active">
         <div class="article-head"><span>Finds all inputs</span></div>
         <div class="article-txt">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, adipisci aliquid aut cupiditate dolor doloribus ea esse, explicabo fuga fugit hic libero nam nemo officiis quaerat quidem, reiciendis sint temporibus.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked.
+            </p>
+          <p>Notice there is no change when clicking the checkboxes since no click events have been</p>
         </div>
       </div>
     </div>
@@ -72,7 +73,7 @@
       <div class="price-main">
         <div class="price-box">
           <h3>Basic plan</h3>
-          <div class="price-amount">85 <sup>99</sup></div>
+          <div class="price-amount">85<sup>99</sup></div>
           <div class="price-table">
             <ul>
               <li>Zakup towaru + dowóz</li>
@@ -81,9 +82,9 @@
           </div>
           <button>Dołącz</button>
         </div>
-        <div class="price-box">
-          <h3></h3>
-          <div class="price-amount">95 <sup>99</sup></div>
+        <div class="price-box main-price">
+          <h3>Standard Plan</h3>
+          <div class="price-amount">95<sup>99</sup></div>
           <div class="price-table">
             <ul>
               <li>Zakup towaru + dowóz</li>
@@ -94,8 +95,8 @@
           <button>Dołącz</button>
         </div>
         <div class="price-box">
-          <h3></h3>
-          <div class="price-amount">211 <sup>99</sup></div>
+          <h3>Advance Plan</h3>
+          <div class="price-amount">211<sup>00</sup></div>
           <div class="price-table">
             <ul>
               <li>Zakup towaru + dowóz</li>
@@ -115,28 +116,37 @@
     <div class="main-width">
     <h2>kontakt</h2>
       <form action="">
-        .form
-        <div class="form-group">
-          <label for="">
-            <input type="text" placeholder="imię">
-          </label>
+        <div class="firstColumn">
+          <div class="form-group">
+            <label for="name">
+              <input type="text" id="name" placeholder="imię">
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="email">
+              <input type="email" id="email" placeholder="email">
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="message">
+              <textarea name="Wiadomosc" id="message" rows="4">Wiadomość</textarea>
+            </label>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="">
-            <input type="text" placeholder="email">
-          </label>
+        <div class="secondColumn">
+          <div class="form-group">
+            <div class="form-image"></div>
+              <!--<img src="images/red_chair.png" alt="Red Chair">-->
+          </div>
+          <div class="form-group">
+
+            <input type="checkbox" id="Zgoda" value="Zgoda" checked>
+            <label for="Zgoda" class="check">Zgadzam się na przetwarzanie danych osobowych<br>
+            </label>
+
+          </div>
+          <button class="button-form">Wyślij</button>
         </div>
-        <div class="form-group">
-          <label for="">
-            <input type="text" placeholder="Wiadomość">
-          </label>
-        </div>
-        <div class="form-group 2ndColumn">
-          <label for="">
-            <img src="images/red_chair.png" alt="Red Chair">
-          </label>
-        </div>
-        <button>Wyślij</button>
       </form>
     </div>
   </section>
@@ -144,8 +154,13 @@
   <footer>
     <div class="main-width site-footer">
       <div class="copy">&copy; 2018 | All Rights Reserved - Sit On Chair</div>
-      <div class="social"></div>
-      <div class="footer-logo">Sit <span>on</span> chair</div>
+      <div class="social">
+        <a href=""><img src="images/flickr.png" alt=""></a>
+        <a href=""><img src="images/vimeo.png" alt=""></a>
+        <a href=""><img src="images/pinterest.png" alt=""></a>
+        <a href=""><img src="images/twitter.png" alt=""></a>
+      </div>
+      <div class="footer-logo">Sit <strong>on</strong> chair</div>
     </div>
   </footer>
 </body>
