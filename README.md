@@ -9,5 +9,5 @@ Simple template with:
  
  preview: 
 
- http://htmlpreview.github.io/?https://github.com/macone/sitOnChair_template/blob/master/index.html
+http://checkme.pl/sit_on_chair/
  
