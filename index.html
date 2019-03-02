@@ -8,6 +8,7 @@
   <title>Sit On Chair</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
   <header>
@@ -33,16 +34,29 @@
     </div>
     <div class="slider">
       <div class="main-width">
-        <div class="slider-cont">
-          <div class="slider-arrow"><</div>
-          <div  class="slider-img">  </div>
-          <div class="slider-txt">
-            <h1>Sit <strong>on</strong> our<strong> chair</strong></h1>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nihil sequi tenetur voluptatum. Aliquid autem culpa cupiditate deleniti dolore facilis incidunt iusto labore numquam placeat porro, reiciendis velit vitae voluptas!</span>
-            <button>Zobacz więcej</button>
+        <!--<div class="slider-cont">-->
+          <div class="slider-arrow" id="left"><</div>
+          <div class="slider-cont">
+            <div class="slide active">
+              <div  class="slider-img blackChair">  </div>
+              <div class="slider-txt">
+                <h1>Sit <strong>on</strong> our<strong> chair</strong></h1>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nihil sequi tenetur voluptatum. Aliquid autem culpa cupiditate deleniti dolore facilis incidunt iusto labore numquam placeat porro, reiciendis velit vitae voluptas!</span>
+                <button>Zobacz więcej</button>
+              </div>
+            </div>
+            <div class="slide hidden">
+              <div class="slider-img orangeChair">  </div>
+              <div class="slider-txt">
+                <h1>Sit <strong>on</strong> our<strong> chair</strong></h1>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nihil sequi tenetur voluptatum. Aliquid autem culpa cupiditate deleniti dolore facilis incidunt iusto labore numquam placeat porro, reiciendis velit vitae voluptas!</span>
+                <button>Zobacz więcej</button>
+              </div>
+            </div>
           </div>
-          <div class="slider-arrow">></div>
-        </div>
+          <div class="slider-arrow" id="right">></div>
+        <!--</div>-->
+
       </div>
     </div>
   </header>
@@ -112,48 +126,85 @@
 
   </section>
 
-  <section class="form">
+
+  <section class="application ">
     <div class="main-width">
-    <h2>kontakt</h2>
-      <form action="">
-        <div class="firstColumn">
-          <div class="form-group">
-            <label for="name">
-              <input type="text" id="name" placeholder="imię">
-            </label>
-          </div>
-          <div class="form-group">
-            <label for="email">
-              <input type="email" id="email" placeholder="email">
-            </label>
-          </div>
-          <div class="form-group">
-            <label for="message">
-              <textarea name="Wiadomosc" id="message" rows="4">Wiadomość</textarea>
-            </label>
-          </div>
+      <section class="choice_part inline">
+        <div>
+          <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+          <span class="green_bell"></span>
         </div>
-        <div class="secondColumn">
-          <div class="form-group">
-            <div class="form-image"></div>
-              <!--<img src="images/red_chair.png" alt="Red Chair">-->
-          </div>
-          <div class="form-group">
 
-            <input type="checkbox" id="Zgoda" value="Zgoda" checked>
-            <label for="Zgoda" class="check">Zgadzam się na przetwarzanie danych osobowych<br>
-            </label>
-
+        <div class="form">
+          <div class="drop_down_list">
+            <span class="list_label">Wybierz rodzaj</span>
+            <span class="list_arrow"></span>
+            <ul class="list_panel">
+              <li data-model ="300">Clair</li>
+              <li data-model ="380">Margarita</li>
+              <li data-model ="420">Selena</li>
+            </ul>
           </div>
-          <button class="button-form">Wyślij</button>
+          <div class="drop_down_list">
+            <span class="list_label">Wybierz kolor</span>
+            <span class="list_arrow"></span>
+            <ul class="list_panel">
+              <li data-color ="30">Czerwony</li>
+              <li data-color ="0">Czarny</li>
+              <li data-color ="50">Pomarańczowy</li>
+            </ul>
+          </div>
+          <div class="drop_down_list">
+            <span class="list_label">Wybierz materiał</span>
+            <span class="list_arrow"></span>
+            <ul class="list_panel">
+              <li data-pattern = "0">Tkanina</li>
+              <li data-pattern = "230">Skóra</li>
+            </ul>
+          </div>
+          <div class="checkbox check-box">
+            <input type="checkbox" id="transport" data-transport-price="200">
+            <label for="transport">Transport</label>
+          </div>
+          <!--<div class="checkbox"></div>-->
+          <!--<span class="list_label inline_text">Transport</span>-->
         </div>
-      </form>
+      </section>
+
+      <section class="image_part inline">
+        <img src="images/red_chair.png">
+      </section>
+
+      <section class="summary_part inline">
+        <div class="align_right">
+          <h3>PODSUMOWANIE</h3>
+          <span class="green_bell"></span>
+        </div>
+
+        <div class="summary_panel">
+          <div class="panel_left">
+            <h4 class="title">Twój fotel</h4>
+            <span class="color"></span>
+            <span class="pattern"></span>
+            <span class="transport"></span>
+          </div>
+          <div class="panel_right">
+            <h4 class="title value"></h4>
+            <span class="color value"></span>
+            <span class="pattern value"></span>
+            <span class="transport value"></span>
+          </div>
+          <div class="sum_label">SUMA</div>
+          <div class="sum"><strong></strong></div>
+        </div>
+        <a href="" class="green_button">Zamawiam</a>
+      </section>
     </div>
   </section>
 
   <footer>
     <div class="main-width site-footer">
-      <div class="copy">&copy; 2018 | All Rights Reserved - Sit On Chair</div>
+      <div class="copy">&copy; 2019 | All Rights Reserved - Sit On Chair</div>
       <div class="social">
         <a href=""><img src="images/flickr.png" alt=""></a>
         <a href=""><img src="images/vimeo.png" alt=""></a>
@@ -163,5 +214,6 @@
       <div class="footer-logo">Sit <strong>on</strong> chair</div>
     </div>
   </footer>
+  <script src="js/app.js"></script>
 </body>
 </html>
